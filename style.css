@@ -1,4 +1,112 @@
-.container-sm{ 
-    color: red;
-    background-color: red;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{ 
+    min-height: 80vh;
+    background: #ffffff;
 }
+.login-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 15vh;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+
+    
+}
+
+/* left side */
+  .login-left {
+      background: linear-gradient(
+        rgba(255, 0, 174, 0.85),
+        rgba(193, 0, 119, 0.85)
+      ), 
+    url("https://www.aamacure.com/assets/img/aama.png") center/cover no-repeat; 
+    color: #ffffff;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+
+
+    }
+    .brand h2{ 
+      font-weight: 800;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .brand h1 {
+       font-weight: 750;
+       font-size: 64px;
+       letter-spacing: 1px;
+       font-family: 'Roboto', sans-serif;
+    }
+    .brand hr {
+      width: 60px;
+      margin: 15px auto;
+      border-top: 2px solid #fff;
+    }
+    .brand p{ 
+      font-size: 14px;
+      opacity: .9;
+    }
+    
+/* right side */
+
+.login-right { 
+  padding: 50px 45px;
+}
+
+.login-right h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+} 
+.form-control:focus{ 
+  box-shadow: none;
+  border-color: #00aeff;
+}
+.btn-login{ 
+  background: #0188C8;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: 600;
+      
+}
+.btn-login:hover{ 
+  background: #0294ce;
+  color: #fff;
+}
+.card{ 
+  border: none;
+  
+}
+ .social-btn {
+      border: 1px solid #ddd;
+      border-radius: 30px;
+      padding: 10px 16px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #fff;
+    }
+
+    .social-btn:hover {
+      background-color: #f8f9fa;
+    }
+
+    .social-icon {
+      width: 20px;
+      height: 20px;
+    }
+    
+  
+  @media (max-width: 768px) {
+    .login-left {
+      display: none;
+    } 
+  }
